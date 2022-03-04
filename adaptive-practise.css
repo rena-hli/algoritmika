@@ -1,0 +1,174 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.main_container {
+  margin: 0px auto;
+  width: 80%;
+}
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.upper-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.upper-block__p-wrapper {
+  width: 50%;
+}
+
+.upper-block__p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.upper-block__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .upper-block__shadow {
+  background-color: #efefef;
+  height: 60px;
+  width: 366px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 12%;
+  z-index: -1;
+} */
+
+.lower-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.lower-block__items-wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.lower-block__item {
+  width: 20%;
+  min-width: 200px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.lower-block__bold {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.lower-block__regular {
+  font-size: 18px;
+}
+
+@media (max-width: 1440px) {
+  /* desktop resolution */
+  .lower-block__items-wrapper {
+    width: 80%;
+  }
+  .lower-block__img-wrapper {
+    margin-right: 10%;
+  }
+
+  .lower-block {
+    justify-content: unset;
+  }
+}
+@media (max-width: 830px) and (min-width: 376px) {
+  /* tablet resolution */
+  .upper-block {
+    flex-wrap: nowrap;
+  }
+  .lower-block__img-video {
+    display: none;
+  }
+  .upper-block__p-wrapper {
+    width: 65%;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .upper-block__p {
+    font-size: 14px;
+  }
+  .upper-block__img-video {
+    width: 75%;
+    height: 75%;
+  }
+  .lower-block__bold {
+    font-size: 15px;
+  }
+  .lower-block__regular {
+    font-size: 11px;
+  }
+  .lower-block__item {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 375px) {
+  /* mobile resolution */
+  .lower-block__img-video {
+    display: none;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .upper-block__p-wrapper {
+    width: 100%;
+  }
+  .upper-block__p {
+    font-size: 12px;
+  }
+  .upper-block__img-video {
+    width: 85%;
+    height: 85%;
+  }
+  .lower-block__bold {
+    font-size: 12px;
+  }
+  .lower-block__regular {
+    font-size: 10px;
+  }
+  .lower-block__item {
+    padding-top: 0px;
+  }
+  .lower-block {
+    justify-content: unset;
+  }
+}
+
+/* @media (max-width: 992px) {
+  .lower-block__img-video {
+    display: none;
+  }
+  .lower-block__items-wrapper {
+    width: 80%;
+  }
+  .lower-block{
+    justify-content: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .upper-block__p-wrapper {
+    width: 100%;
+  }
+  .upper-block {
+    flex-wrap: wrap;
+  }
+} */
